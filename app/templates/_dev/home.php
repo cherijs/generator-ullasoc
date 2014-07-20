@@ -69,7 +69,7 @@
         <link rel="stylesheet" href="/styles/main.css">
         <!-- endbuild -->
 
-        <!-- build:js /scripts/vendor/modernizr.js -->
+        <!-- build:js /js/vendor/modernizr.js -->
         <script src="/../bower_components/modernizr/modernizr.js"></script>
         <!-- endbuild -->
 
@@ -106,7 +106,7 @@
 
 <div class="modal" id="warning">
     <div class="content">
-        <a class="close switch" modal-trigger="|#warning"><button title="Aizvērt" type="button" class="mfp-close">×</button></a>
+        <a class="close switch" data-trigger="|#warning"><button title="Aizvērt" type="button" class="mfp-close">×</button></a>
       
         <div class="text-center">
             <h3>Ai Ai Ai</h3>
@@ -158,10 +158,11 @@
         </script>
 
 
-        <!-- build:js /scripts/vendor.js -->
+        <!-- build:js /js/vendor.js -->
         <!-- bower:js -->
         <script src="/../bower_components/jquery/dist/jquery.js"></script>
         <!-- endbower -->
+        <script src="/js/gumby.min.js"></script>
         <!-- endbuild -->
 
         <script type="text/javascript">var _gaq=_gaq||[];
@@ -170,8 +171,8 @@
         (function(){var ga=document.createElement('script');ga.type='text/javascript';ga.async =true;ga.src=('https:'==document.location.protocol?'https://ssl':'http://www')+'.google-analytics.com/ga.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ga,s);})();
         </script>
 
-        <!-- build:js({_dev,.tmp}) /scripts/main.js -->
-        <script src="/scripts/main.js"></script>
+        <!-- build:js({_dev,.tmp}) /js/main.js -->
+        <script src="/js/main.js"></script>
         <!-- endbuild -->
 
 
