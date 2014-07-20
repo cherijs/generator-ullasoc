@@ -1,4 +1,4 @@
-# generator-Ullasoc [![Build Status](https://secure.travis-ci.org/cherijs/generator-ullalaa.png?branch=master)](https://travis-ci.org/cherijs/generator-ullalaa)
+# generator-Ullasoc [![Build Status](https://secure.travis-ci.org/cherijs/generator-ullasoc.png?branch=master)](https://travis-ci.org/cherijs/generator-ullasoc)
 
 > [Yeoman](http://yeoman.io) generator
 
@@ -17,13 +17,13 @@ Yeoman travels light. He didn't pack any generators when he moved in. You can th
 To install generator-Ullasoc from npm, run:
 
 ```bash
-$ npm install -g generator-ullalaa
+$ npm install -g generator-ullasoc
 ```
 
 Finally, initiate the generator:
 
 ```bash
-$ yo ullalaa
+$ yo ullasoc
 ```
 
 
