@@ -1,6 +1,6 @@
 {
     "name": "generator-ullasoc",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "description": "Scaffold out a front-end web with social login",
     "license": "MIT",
     "main": "app/index.js",
