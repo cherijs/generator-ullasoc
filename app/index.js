@@ -185,8 +185,8 @@ Generator.prototype.copyFiles = function copyFiles() {
     this.mkdir('_dev/images');
     this.mkdir('_dev/config');
 
-    this.copy('_package.json', 'package.json');
-    this.copy('_bower.json', 'bower.json');
+    this.copy('package.json', 'package.json');
+    this.copy('bower.json', 'bower.json');
 
     var context = {
         customHost: this.customHost,
@@ -202,8 +202,8 @@ Generator.prototype.copyFiles = function copyFiles() {
     };
 
     this.template('_Gruntfile.js', 'Gruntfile.js', context);
-    this.template('_dev/config/dbconfig.php', '_dev/config/dbconfig.php', context);
-    this.template('_dev/config/system_head.php', '_dev/config/system_head.php', context);
+    this.template('config/dbconfig.php', '_dev/config/dbconfig.php', context);
+    this.template('config/system_head.php', '_dev/config/system_head.php', context);
 
 
 
@@ -214,8 +214,8 @@ Generator.prototype.copyFiles = function copyFiles() {
     this.copy('prod_htaccess', '_htaccess');
 
 
-    this.copy('editorconfig', '.editorconfig');
-    this.copy('jshintrc', '.jshintrc');
+    this.copy('.editorconfig', '.editorconfig');
+    this.copy('.jshintrc', '.jshintrc');
     this.copy('gitignore', '.gitignore');
     this.copy('gitattributes', '.gitattributes');
 

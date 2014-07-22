@@ -3,8 +3,8 @@ error_reporting(E_ALL^E_NOTICE);
 header('Content-Type: text/html; charset=utf-8');
 session_start();
 
-$server_url = "http://<%= customHost %>/";
-$table_prefix = "<%= table_prefix %>";
+$server_url = "http://me.dev/";
+$table_prefix = "ULLASOC";
 
 
 define('GOOGLE', 'UA-1656950-27');

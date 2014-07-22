@@ -91,16 +91,34 @@
 
         <div class="hero-unit">
           <div class="logo"></div>
-          <h1>Ullasoc</h1>
+          <h1>Ahoi......</h1>
           <p>You now have</p>
           <ul>
             <li>HTML5 Boilerplate</li>
             <li>Sass</li>
             <li>Modernizr</li>
+          </ul>
+
+          <p>&nbsp;</p>
+          <p>Login with</p>
+          <ul>
             <li><a href="/login-facebook.php">Facebook</a>  </li>
             <li><a href="/login-twitter.php">Twitter</a>    </li>
             <li><a href="/login-draugiem.php">Draugiem</a>  </li>
           </ul>
+        <p>&nbsp;</p>
+        <div class="col">
+            Lorem ipsum Adipisicing anim proident nostrud cupidatat cillum commodo aliquip mollit consectetur consectetur est proident veniam pariatur sit nulla sed esse eiusmod nulla Excepteur irure.
+        </div>
+          <p>&nbsp;</p>
+          <p>Share</p>
+          <ul class="l_row">
+            <li><a href="#" onclick="Fb('<?=$server_url?>');"><img src="/images/fb.png" alt=""></a></li>
+            <li><a href="#" onclick="Tw('<?=$server_url?>');"><img src="/images/tw.png" alt=""></a></li>
+            <li><a href="#" onclick="Dr('<?=$server_url?>');"><img src="/images/dr.png" alt=""></a></li>
+          </ul>
+
+
         </div>
 
 
@@ -123,38 +141,14 @@
 
 
         <script type="text/javascript">
-            <?=($_SESSION["id"]?'var session = '.$_SESSION["id"].';':"")?>
+        <?=($server_url?'var SERVER_URL = \''.$server_url.'\';':"")?>
 
-             if (!console) console = {
-                 log: function () {}
-             };
+        <?=(TITLE?'var TITLE = \''.TITLE.'\';':"")?>
 
+        <?=(SHARE_TXT?'var SHARE_TXT = \''.SHARE_TXT.'\';':"")?>
 
-             function DraugiemSay(url) {
-                var titlePrefix = encodeURIComponent('<?=SHARE_TXT?>');
-                 window.open('http://www.draugiem.lv/say/ext/add.php?title=' + encodeURIComponent('<?=TITLE?>') + '&link=' + encodeURIComponent(url) + (titlePrefix ? '&titlePrefix=' + titlePrefix : ''), '', 'location=1,status=1,scrollbars=0,resizable=0,width=530,height=400');
-                 return false;
-             }
+        <?=($_SESSION["id"]?'var SESSION = '.$_SESSION["id"].';':"")?>
 
-             function Fb(url) {
-                 var width = 575,
-                     height = 400,
-                     left = ($(window).width() - width) / 2,
-                     top = ($(window).height() - height) / 2,
-                     url = "http://www.facebook.com/sharer.php?s=100&p[title]="+encodeURIComponent('<?=TITLE?>')+"&p[url]=" + url + "&p[images[]=<?=$server_url?>images/facebook.png";
-                   var  opts = 'status=1' + ',width=' + width + ',height=' + height + ',top=' + top + ',left=' + left;
-                 window.open(url, 'facebook', opts);
-             }
-
-             function Tw(url) {
-                 var width = 575,
-                     height = 400,
-                     left = ($(window).width() - width) / 2,
-                     top = ($(window).height() - height) / 2,
-                     url = "http://twitter.com/share?url=" + url + "&text="+encodeURIComponent('<?=SHARE_TXT?>');
-                    var opts = 'status=1' + ',width=' + width + ',height=' + height + ',top=' + top + ',left=' + left;
-                     window.open(url, 'twitter', opts);
-             }
         </script>
 
 
