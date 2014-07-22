@@ -3,7 +3,7 @@ error_reporting(E_ALL^E_NOTICE);
 header('Content-Type: text/html; charset=utf-8');
 session_start();
 
-$server_url = "http://me.dev/";
+$server_url = "http://ullasoc.dev/";
 $table_prefix = "ULLASOC";
 
 
