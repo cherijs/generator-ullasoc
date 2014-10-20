@@ -1,6 +1,6 @@
 {
     "name": "yo-ullasoc",
-    "version": "0.0.2",
+    "version": "0.0.7",
     "dependencies": {},
     "devDependencies": {
         "browser-sync": "^1.2.1",
