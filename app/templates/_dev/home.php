@@ -91,11 +91,11 @@
 
         <div class="hero-unit">
           <div class="logo"></div>
-          <h1>Ahoi......</h1>
+          <h1>Ahoi... <span>v0.0.2</span></h1>
           <p>You now have</p>
           <ul>
             <li>HTML5 Boilerplate</li>
-            <li>Sass</li>
+            <li>Sass/Scss</li>
             <li>Modernizr</li>
           </ul>
 
@@ -154,7 +154,7 @@
 
         <!-- build:js /js/vendor.js -->
         <!-- bower:js -->
-        <script src="/../bower_components/jquery/dist/jquery.js"></script>
+        <script src="../bower_components/jquery/dist/jquery.js"></script>
         <!-- endbower -->
         <script src="/js/gumby.min.js"></script>
         <!-- endbuild -->
