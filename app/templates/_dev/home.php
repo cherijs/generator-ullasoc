@@ -91,7 +91,7 @@
 
         <div class="hero-unit">
           <div class="logo"></div>
-          <h1>Ahoi... <span>v0.0.6</span></h1>
+          <h1>Ahoi... <span>v0.0.7</span></h1>
           <p>You now have</p>
           <ul>
             <li>HTML5 Boilerplate</li>
