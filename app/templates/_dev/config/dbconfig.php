@@ -6,7 +6,7 @@ define('DB_NAME', 'slurpdev');
 define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'root');
+define('DB_PASSWORD', 'ds53ds53');
 
 class Db {
 
